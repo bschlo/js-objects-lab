@@ -21,7 +21,7 @@ const game = {
 
 
   
-console.dir(pokemon, { maxArrayLength: null })
+// console.dir(pokemon, { maxArrayLength: null })
 
 
 // Exercise 1 Tony helped me with this...
@@ -40,7 +40,7 @@ console.log(pokemon.findPokemon(59))
 
 // Exercise 2
 
-console.log(game)
+// console.log(game)
 
 /*
 Exercise 3
@@ -53,7 +53,7 @@ Solve Exercise 3 here:
 
 game.difficulty = 'Medium'
 
-console.log(game)
+// console.log(game)
 
 /*
 Exercise 4
@@ -80,7 +80,7 @@ if (starterPokemon) {
   game.party.push(starterPokemon)
 }
 
-console.log(game)
+// console.log(game)
 
 /*
 Exercise 5
@@ -117,7 +117,7 @@ if (additionalPokemonThree) {
 }
 
 
-console.log(game)
+// console.log(game)
 
 /*
 Exercise 6
@@ -135,7 +135,7 @@ game.gyms.forEach ((easyGym) => { //etablish a new parameter
   }
 })
 
-console.log(game)
+// console.log(game)
 
 /*
 Exercise 7
@@ -165,7 +165,7 @@ pokemon.forEach((entry) => {
 })
 game.party.splice(0,1, evolvePokemon)
 
-console.log(game)
+// console.log(game)
 
 /*
 Exercise 8
@@ -215,7 +215,7 @@ let myNewPokemon =  { number: 80, name: "Slowbro", type: "water", hp: 95, starte
 
 game.catchPokemon(myNewPokemon)
 
-console.log(game.party)
+// console.log(game.party)
 
 /*
 Exercise 11
@@ -238,7 +238,7 @@ game.items.forEach((items) => {
     }
   })
 
-console.log(game)
+// console.log(game)
 
 /*
 Exercise 12
@@ -254,7 +254,7 @@ game.gyms.forEach ((easyGym) => { //etablish a new parameter
   }
 })
 
-console.log(game)
+// console.log(game)
 
 /*
 Exercise 13
@@ -278,6 +278,46 @@ For example, if five gym objects have a value of `true` on their `completed` pro
 
 Solve Exercise 13 here:
 */
+
+game.gymStatus = () => {
+  const gymTally = {
+    completed: 0, 
+    incomplete: 0 
+  }
+
+game.gyms.forEach(gym => {
+  if(gym.completed) {
+    gymTally.completed += 1
+  }
+  else {
+    gymTally.incomplete += 1
+  }
+ 
+})
+console.log('LOOOOKK HEREEEEE',gymTally)
+}
+
+game.gymStatus ()
+
+// console.log(game)
+
+//game.gymTotal = {completed: 0, incomplete: 0}
+
+
+// game.gymTotal.forEach ((gymCompleted) => {
+//   if(game.completed === true) {
+//     gymTotal.completed -=1
+//   }
+// })
+
+// game.gymTotal.forEach ((game.incomplete) => {
+//   if(game.incomplete === false) {
+//     gymTotal.incomplete -=1
+//   }
+// })
+
+
+// console.log(game)
 
 /*
 Exercise 14
@@ -309,7 +349,7 @@ game.gyms.forEach ((easyGym) => { //etablish a new parameter
   }
 })
 
-console.log(game)
+// console.log(game)
 
 /*
 Exercise 16
@@ -319,4 +359,4 @@ Exercise 16
 Solve Exercise 16 here:
 */
 
-console.log(game)
+// console.log(game)
